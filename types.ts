@@ -17,10 +17,20 @@ export interface AstralBlueprint {
   visualization: string;
 }
 
+export interface DiamondAlchemyStep {
+  title: string;
+  description: string;
+  subItems: string[];
+}
+
 export interface SynergyContent {
   connectionType: string;
   description: string;
   steps: SectionContent[];
+  diamondAlchemy: {
+    title: string;
+    steps: DiamondAlchemyStep[];
+  };
   dualPower: {
     migi: string;
     james: string;
@@ -38,4 +48,5 @@ export interface PersonalityProfile {
   jewelryAdvice?: SectionContent[];
   investmentAdvice?: SectionContent[];
   missionAdvice?: SectionContent[];
+  imageUrl?: string;
 }

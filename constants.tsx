@@ -5,9 +5,16 @@ import { AnalysisType, PersonalityProfile, SynergyContent } from './types';
 export const BRAND_NAME = "MigiJames";
 export const AUTHOR = "ครูเด่น มาสเตอร์ฟา";
 
+// Using the provided photo of Migi and James
+export const COUPLE_IMAGE = "https://raw.githubusercontent.com/tardgon/image/main/migi_james.jpg";
+// Placeholder for individual high-end shots until actual ones are provided (using themed images)
+export const JAMES_HERO = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800";
+export const MIGI_HERO = "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=800";
+
 export const MIGI_PROFILE: PersonalityProfile = {
   name: "น้องมิกิ",
   year: "2569",
+  imageUrl: MIGI_HERO,
   decoding: [
     {
       title: "Step 1: วิเคราะห์ต้นเหตุและบริบท (The Decoding)",
@@ -39,14 +46,14 @@ export const MIGI_PROFILE: PersonalityProfile = {
     planet: "The Sun (1) & Venus (6)",
     sign: "Fire & Earth (Leo-Virgo Blend)",
     house: "10th & 11th House (Career & Network)",
-    visualization: "หนูจะขับเคลื่อนงานด้วยความมั่นใจแบบราศีสิงห์ แต่ละเอียดประณีตแบบราศีกันย์"
+    visualization: "ขับเคลื่อนงานด้วยความมั่นใจแบบราศีสิงห์ แต่ละเอียดประณีตแบบราศีกันย์"
   },
   jewelryAdvice: [
     {
       title: "รหัสสีและอัญมณีเปิดสวิตช์พลังงาน (Energy Activation)",
       items: [
-        "พลังแห่ง 'ศรี' (เมตตา/เงิน): มุก (Pearl), มูนสโตน, เพชรน้ำงามประกายขาวนวล (รหัสสี: ขาวนวล/เงิน)",
-        "พลังแห่ง 'เดช' (อำนาจ/บารมี): ทับทิม (Ruby), โกเมน, ตัวเรือนทองคำแท้ (รหัสสี: แดงสว่าง/ทอง)",
+        "พลังแห่ง 'ศรี' (เมตตา/เงิน): มุก (Pearl), มูนสโตน, เพชรน้ำงามประกายขาวนวล",
+        "พลังแห่ง 'เดช' (อำนาจ/บารมี): ทับทิม (Ruby), โกเมน, ตัวเรือนทองคำแท้",
         "Astral Jewelry Design: ใช้ทับทิมเป็น Center โอบล้อมด้วยเพชร บนตัวเรือนทองคำ",
         "ข้อควรระวัง: เลี่ยงอัญมณีสีเหลืองหรือบุษราคัมชั่วคราว (ดาว 5 เป็นกาลกิณีจร)"
       ]
@@ -56,11 +63,10 @@ export const MIGI_PROFILE: PersonalityProfile = {
     {
       title: "พันธกิจ 'The Wounded Healer' (แหล่งเรียนรู้)",
       items: [
-        "บทเรียนชีวิต: การเปลี่ยน 'บาดแผล' (จากดาว 7) เป็น 'ประทีปส่องทาง' ให้คนสับสนในชีวิต",
+        "บทเรียนชีวิต: เปลี่ยน 'บาดแผล' เป็น 'ประทีปส่องทาง' ให้คนสับสนในชีวิต",
         "Learning Center: บรรยากาศต้องเหมือนบ้าน (Cancer) แต่มีปัญญาดั่งวิหาร (Sagittarius)",
-        "Synergy with Kru Den: เปลี่ยนวิชาการยากๆ ให้เป็นความสุนทรีย์ (Flow Learning)",
-        "Action: ใช้ 'ศิลปะและอัญมณี' (ดาว 6 ราชา) เป็นสื่อกลาง มากกว่าการสอนแบบทฤษฎีแข็งทื่อ",
-        "Action: Use 'art and gems' (Venus 6 - Raja) as a medium, not rigid theory."
+        "Action: ใช้ 'ศิลปะและอัญมณี' เป็นสื่อกลางในการสอนแบบ Storytelling",
+        "Synergy: ครูเด่นจะช่วยออกแบบ Flow Learning ที่เน้นความรู้สึกและประสบการณ์"
       ]
     }
   ],
@@ -70,6 +76,7 @@ export const MIGI_PROFILE: PersonalityProfile = {
 export const JAMES_PROFILE: PersonalityProfile = {
   name: "น้องเจมส์",
   year: "2569",
+  imageUrl: JAMES_HERO,
   decoding: [
     {
       title: "Step 1: วิเคราะห์ต้นเหตุและบริบท (Cause & Context)",
@@ -83,7 +90,7 @@ export const JAMES_PROFILE: PersonalityProfile = {
       title: "Step 2: วิเคราะห์ผลลัพธ์ปลายทาง (Outcome)",
       items: [
         "ฐานที่ 8: 'สิทธิโชค' - โอกาสพิเศษที่คนอื่นแย่งชิงยาก เป็นรางวัลจากอำนาจที่มองไม่เห็น",
-        "ฐานที่ 9: 'ธะนัง' - การสร้างกระแสการเงินที่มั่นคง มั่งคั่งจากการใช้ความสามารถเฉพาะตัว"
+        "ฐานที่ 9: 'ธะนัง' - การสร้างกระแสการเงินที่มั่นคง มั่งคั่งจากความสามารถเฉพาะตัว"
       ]
     }
   ],
@@ -91,7 +98,7 @@ export const JAMES_PROFILE: PersonalityProfile = {
     {
       title: "กลยุทธ์แก้เกม (The Matrix Solution)",
       items: [
-        "เร่งความสำเร็จ: ใช้ความเด็ดเดี่ยวและ 'ความรู้จริง' (Technical Knowledge) ในการตัดสินใจ",
+        "เร่งความสำเร็จ: ใช้ความเด็ดเดี่ยวและ 'ความรู้จริง' (Technical Knowledge)",
         "Action: ให้ข้อมูลเชิงลึกที่ลูกค้าปฏิเสธไม่ได้ ใช้ 'Storytelling by Star Power'"
       ]
     }
@@ -100,16 +107,15 @@ export const JAMES_PROFILE: PersonalityProfile = {
     planet: "Venus (6) & Moon (2)",
     sign: "Leo (Fire) & Taurus (Earth)",
     house: "1st & 2nd Houses",
-    visualization: "ดาวศุกร์สว่างไสวในราศีสิงห์ - ผู้นำเทรนด์ที่เปี่ยมบารมีแต่มีจิตใจอ่อนโยนแบบพระจันทร์"
+    visualization: "ดาวศุกร์สว่างไสวในราศีสิงห์ - ผู้นำเทรนด์ที่เปี่ยมบารมีแต่มีจิตใจอ่อนโยน"
   },
   jewelryAdvice: [
     {
       title: "รหัสเพชรและอัญมณีคู่บุญ (The Emperor's Aura)",
       items: [
-        "Primary Stone: เพชรน้ำงาม หรือ ไวท์แซฟไฟร์ (พลังดาว 6 ศรีจร) ปัดเป่าอุปสรรคเป็นโอกาส",
-        "Secondary Stone: อัญมณีสีเหลืองทอง (Yellow Sapphire/Citrine) ช่วยเจรจาปิดการขายชิ้นใหญ่",
-        "GIA Certificate: ควรมีเลข 6 (เงิน), 5 (ปัญญา), และ 1 (ชื่อเสียง)",
-        "Carat Weight: ทศนิยมรวมกันได้ 6 หรือ 15 เพื่อดึงดูดลูกค้า High-end"
+        "Primary Stone: เพชรน้ำงาม หรือ ไวท์แซฟไฟร์ (พลังดาว 6 ศรีจร) ปัดเป่าอุปสรรค",
+        "Secondary Stone: อัญมณีสีเหลืองทอง (Yellow Sapphire/Citrine) ช่วยปิดการขายชิ้นใหญ่",
+        "Weight & Carat: ควรมีเลข 6, 5 และ 1 หรือรวมแล้วได้ 15 (กำลังพระจันทร์)"
       ]
     }
   ],
@@ -118,17 +124,8 @@ export const JAMES_PROFILE: PersonalityProfile = {
       title: "กลยุทธ์การลงทุนหุ้น (Investment Blueprint)",
       items: [
         "Style: Value Investor (VI) หรือ DCA ในหุ้น Blue Chip พื้นฐานแกร่ง",
-        "Sector: กลุ่มพลังงาน/เทคโนโลยี (ดาว 1) และ สินค้าพรีเมียม/บันเทิง (ดาว 6)",
-        "Mindset: 'ซื้อความมั่งคั่ง ไม่ได้ซื้อความตื่นเต้น' ใช้ 'เงินเย็น 100%'",
-        "Investment Gemstones: ลาพิส ลาซูลี (สติ), เพชร (ดึงดูดโชค, หยก (ปรับสมดุลปัญญา)"
-      ]
-    },
-    {
-      title: "3-Step Checklist ก่อนกด Buy",
-      items: [
-        "1. เช็คสภาวะใจ: ซื้อเพราะวิเคราะห์ดี หรือซื้อเพราะกลัวตกรถ (Panic)?",
-        "2. เช็คความคุ้มค่า: ถ้าติดดอย 1 ปี ยังนอนหลับสบายและเชื่อในพื้นฐานไหม?",
-        "3. เช็คพลังงานศรี: เรารู้จักธุรกิจนี้ดีเหมือนรู้จักอัญมณีในมือหรือไม่?"
+        "Sector: พลังงาน/เทคโนโลยี (ดาว 1) และ สินค้าพรีเมียม/ความงาม (ดาว 6)",
+        "Checklist: เช็คสภาวะใจ (ไม่ Panic), เช็คความคุ้มค่า (ระยะยาว), เช็คพลังงานศรี"
       ]
     }
   ],
@@ -136,28 +133,41 @@ export const JAMES_PROFILE: PersonalityProfile = {
 };
 
 export const SYNERGY_DATA: SynergyContent = {
-  connectionType: "Soulmate Connection (Friday Friday)",
-  description: "ทั้งคู่เกิดวันศุกร์เหมือนกัน ทำให้คุยกันรู้เรื่องเพียงแค่มองตา มีรสนิยมและความชอบที่คล้ายคลึงกันมาก ส่งผลให้ Brand Identity ของ MigiJames ชัดเจนและไร้ความขัดแย้ง",
+  connectionType: "Soulmate Connection (Friday-Friday)",
+  description: "ทั้งคู่เกิดวันศุกร์เหมือนกัน (ดาว 6) ทำให้สื่อสารกันได้อย่างลึกซึ้ง มีรสนิยมสอดคล้องกันอย่างน่าอัศจรรย์ ส่งผลให้แบรนด์ MigiJames มีอัตลักษณ์ที่แข็งแกร่งและทรงพลังที่สุด",
   steps: [
     {
       title: "The Synergetic Flow (2569)",
       items: [
-        "James Analysis: มิกิ (ดาว 6) คือ 'ศรี' (ความโชคดี) ของเจมส์ในปีนี้ การฟังไอเดียเธอจะนำโชคลาภมหาศาลมาให้",
-        "Migi Analysis: เจมส์ (ดาว 2) คือ 'อุตสาหะ' คอย support และผลักดันให้มิกิทำงานได้อย่างราบรื่นและมั่นคง"
-      ]
-    },
-    {
-      title: "Matrix Solution Pairing",
-      items: [
-        "James: มีดาว 5 (ปัญญา/ความเชี่ยวชาญ) ในฐานสำเร็จ",
-        "Migi: มีดาว 6 (ศิลปะ/ความสวยงาม) ในฐานสำเร็จ",
-        "Synthesis: เมื่อปัญญาผสมผสานกับสุนทรียภาพ ผลลัพธ์คือความสำเร็จระดับ 'จักรพรรดิ'"
+        "Migi is Sri for James: การฟังไอเดียและให้มิกิเป็นหน้าตาของแบรนด์จะนำโชคลาภมหาศาลมาให้เจมส์",
+        "James is Utsaha for Migi: เจมส์จะเป็นแรงขับเคลื่อนและฐานรากที่มั่นคง ทำให้มิกิทำงานได้อย่างลื่นไหล",
+        "Matrix Solution: เมื่อ 'ปัญญา' (เจมส์-5) ผสมกับ 'สุนทรียภาพ' (มิกิ-6) ผลลัพธ์คือความสำเร็จระดับจักรพรรดิ"
       ]
     }
   ],
+  diamondAlchemy: {
+    title: "The Diamond Alchemy Process",
+    steps: [
+      {
+        title: "สกัดมวลสาร (Extraction)",
+        description: "เปลี่ยน 'บาดแผล' ในอดีต (ดาว 7 เสาร์) ให้กลายเป็นทรัพยากรล้ำค่า",
+        subItems: ["Deep Listening (ดาว 4) เข้าถึง Pain Point", "Perspective Shift เปลี่ยนมุมมองความทุกข์ให้เป็นบทเรียน"]
+      },
+      {
+        title: "เจียระไน (The Faceting)",
+        description: "เปลี่ยนความเจ็บปวด (ดาว 3 อังคาร) ให้กลายเป็นกระบวนการเรียนรู้ (ดาว 5 พฤหัส)",
+        subItems: ["Human Communication 4 Levels", "จาก Self Healing สู่ Social Value"]
+      },
+      {
+        title: "ขัดเงา (The Brilliance)",
+        description: "ผลลัพธ์คือหลักสูตรที่ฮีลใจและสร้างความมั่งคั่ง (โสฬสมงคล 16)",
+        subItems: ["เปลี่ยนถ่านให้เป็นเพชรยอดมงกุฎ", "ความสมดุลระหว่างโลกภายในและความมั่งคั่งภายนอก"]
+      }
+    ]
+  },
   dualPower: {
-    migi: "Storytelling & Energy Face (โสฬสมงคลหนุน)",
-    james: "Business Structure & Numerical Codes (กำลังพระเสาร์หนักแน่น)",
-    result: "MigiJames กลายเป็น Amulet Jewelry อันดับ 1"
+    migi: "Storytelling, Energy Activation & Brand Face",
+    james: "Business Structure, Technical Logic & Numerical Codes",
+    result: "MigiJames: The Ultimate Amulet Jewelry Empire"
   }
 };

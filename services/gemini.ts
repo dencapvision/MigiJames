@@ -1,12 +1,13 @@
 
 import { GoogleGenAI } from "@google/genai";
 
-const API_KEY = process.env.API_KEY || "";
-
+// Use getGeminiConsultant to interact with Gemini API
 export const getGeminiConsultant = async (prompt: string, context: string) => {
-  if (!API_KEY) return "API Key is missing.";
-
-  const ai = new GoogleGenAI({ apiKey: API_KEY });
+  // Always create a new GoogleGenAI instance right before making an API call 
+  // to ensure it uses the most up-to-date API key.
+  // Guideline: MUST use new GoogleGenAI({ apiKey: process.env.API_KEY })
+  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+  
   try {
     const response = await ai.models.generateContent({
       model: 'gemini-3-flash-preview',
@@ -16,6 +17,8 @@ export const getGeminiConsultant = async (prompt: string, context: string) => {
         temperature: 0.7,
       }
     });
+
+    // Access the .text property directly (not a method)
     return response.text || "Sorry, I couldn't generate a response.";
   } catch (error) {
     console.error("Gemini Error:", error);
